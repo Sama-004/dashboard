@@ -1,6 +1,7 @@
 export const RevenueCard = ({ title, orderCount, amount }) => {
   return (
-    <div className="bg-white rounded shadow-md p-4">
+    // <div className={`bg-${bgColor} rounded-md shadow-md p-10 mt-5`}>
+    <div className="bg-white rounded-md border shadow-lg p-10 mt-5 w-96">
       <div className="text-gray-600 flex flex-col justify-center">
         <div className="flex">
           <div>{title}</div>
@@ -21,24 +22,26 @@ export const RevenueCard = ({ title, orderCount, amount }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
-        <div className="font-medium text-4xl">{amount}</div>
+      <div className="flex justify-between pt-2">
+        <div className="font-medium text-2xl">{amount}</div>
         {orderCount ? (
-          <div className="flex text-blue-700 cursor-pointer underline font-medium ">
-            {orderCount} orders{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-              />
-            </svg>
+          <div className="flex text-blue-700 cursor-pointer underline font-medium flex-col justify-center">
+            <div className="flex">
+              {orderCount} orders
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
           </div>
         ) : null}
       </div>
