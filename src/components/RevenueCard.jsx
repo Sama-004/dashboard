@@ -1,6 +1,5 @@
 export const RevenueCard = ({ title, orderCount, amount }) => {
   return (
-    // <div className={`bg-${bgColor} rounded-md shadow-md p-10 mt-5`}>
     <div className="bg-white rounded-md border shadow-lg p-10 mt-5 w-96">
       <div className="text-gray-600 flex flex-col justify-center">
         <div className="flex">
@@ -12,7 +11,7 @@ export const RevenueCard = ({ title, orderCount, amount }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-6 h-5 cursor-pointer">
+              className="w-4 h-4 cursor-pointer">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

@@ -38,7 +38,7 @@ export default function Table() {
               <input
                 type="text"
                 className=" w-60 outline-none text-[#808080]"
-                placeholder="Order ID or Transaction ID"></input>
+                placeholder="Order Id or Transaction Id"></input>
             </div>
           </div>
           <div className="flex items-center ">
